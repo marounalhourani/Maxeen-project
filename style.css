@@ -3,3 +3,44 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.nav > li > .nav-1-a {
+  color: #9094a4;
+  font-weight: bold;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  padding: 1.5em;
+}
+
+.nav-link:hover {
+border-top: 4px solid #d85144;
+}
+
+#login-1{
+  color: #d85144;
+}
+
+.nav > li > .nav-1-a {
+  color: #9094a4;
+  font-weight: bold;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  padding: 1.5em;
+}
+
+.nav > li > .nav-link-2 {
+  font-size: 0.7em;
+  letter-spacing: 1px;
+  padding: 1.5em;
+  color: #9094a4;
+  font-weight: bold;
+}
+
+nav > li > img {
+flex-basis: 0.5;
+height: auto;
+}
+
+.mycart {
+  flex-basis: 1;
+}
