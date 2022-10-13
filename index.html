@@ -16,9 +16,14 @@
 
   <body>
 
-    <section id="section-1">
-      <div class="px-5 nav-bar-1 d-flex justify-content-between container">
-        <ul class="nav d-flex justify-content-between flex-shrink-1">
+    <div class="py-5">
+      <h3 data-number="20" class="testing">test</h3>
+    </div>
+
+    <section id="section-1" class="position-relative">
+      <div class="px-5 px-5 px-5 nav-bar-1 d-flex justify-content-between container">
+
+        <ul class="nav d-flex justify-content-between">
           <li class="nav-item">
             <a class="nav-link nav-1-a" href="#">Home</a></li>
           <li class="nav-item">
@@ -29,19 +34,32 @@
             <a class="nav-link nav-1-a" id="login-1" href="#">Login</a></li>
         </ul>
 
-        <div class="img-nav-1 p-0 mt-3 text-center flex-shrink-1">
-          <img src="./images/Group 56.png" style="width:68%" class="img-fluid">
+        <div class="img-nav-1 text-center top-0 start-50 translate-middle mt-5">
+          <img src="./images/Group 56.png" style="width: 67%;" class="img-fluid">
         </div>
 
-        <ul class="nav d-flex justify-content-between flex-shrink-1">
+        <ul class="nav d-flex justify-content-between">
           <li class="nav-item">
-            <a class="nav-link nav-1-a" href="#"><img src="./images/heart.png" class="img-fluid nav-1-logo" alt="heart"></a></li>
+            <a class="nav-link nav-1-a position-relative" href="#">
+              <img src="./images/heart.png" class="img-fluid nav-1-logo" alt="heart">
+              <div class="d-flex align-items-center text-center justify-content-center circle-1 position-absolute">
+                77
+              </div>
+            </a>
+
+          </li>
           <li class="nav-item">
-            <a class="nav-link nav-1-a" href="#"><img src="./images/shopping-cart.png" class="img-fluid nav-1-logo" alt="shopping"></a></li>
-          <li class="nav-item p-0 m-0">
+            <a class="nav-link nav-1-a position-relative" href="#">
+              <img src="./images/shopping-cart.png" class="img-fluid nav-1-logo" alt="shopping">
+              <div class="d-flex align-items-center text-center justify-content-center circle-2 position-absolute">
+                98
+              </div>
+            
+            </a></li>
+          <li class="nav-item">
             <a class="nav-link nav-1-a" id="my-cart" href="#">My Cart</a></li>
         </ul>
-      </div>
+        </div>
     </section>
 
 <!-- ------------------------------ -->
@@ -50,16 +68,20 @@
 <section class="section-2 mt-5">
 
 
-  <ul class="nav container">
+  <ul class="nav container align-items-center d-flex">
 
     <li class="nav-item">
-      <a class="nav-link section-2-nav btn btn-secondary text-white" id="categories" href="#">
-        <img src="./images/Group 57.png"> Categories <img src="./images/Path 1516.png">
+      <a class="d-flex align-items-center nav-link section-2-nav btn btn-secondary text-white" id="categories" href="#">
+        <div><img src="./images/Group 57.png"></div>
+        <div class="px-2">Categories</div>
+        <div><img src="./images/Path 1516.png"></div>
       </a></li>
 
     <li class="nav-item">
-      <a class="nav-link section-2-nav" href="#">
-        <img src="./images/book.png"> Find a Course
+      <a class="d-felx align-items-center nav-link section-2-nav" href="#">
+        <div> <img src="./images/book.png"></div>
+        <div>Find a Course</div>
+        
       </a></li>
 
     <li class="nav-item">
@@ -135,9 +157,13 @@
 
       <div class="container h1 fw-bold text-center">SEARCH BY KEYWORD</div>
 
-      <div>
-        <input type="text" name="search" placeholder="Search Here" class="search-bar-input">
-        <img src="./images/search.png" class="search_photo" >
+      <div class="d-flex search-input">
+        <div class="w-100">
+          <input type="text" name="search" placeholder="Search Here" class="search-bar-input">
+        </div>
+        <div>
+            <img src="./images/search.png" class="search_photo" >
+        </div>
       </div>
   
 
@@ -145,7 +171,18 @@
 
     </section>
 
+<script>
+  document.querySelector('.search-input input').addEventListener('focus', function(event) {
+    console.log(event);
+    event.target.parentNode.parentNode.classList.add('search-input-focus');
+  });
+  document.querySelector('.search-input input').addEventListener('blur', function(event) {
+    console.log(event);
+    event.target.parentNode.parentNode.classList.remove('search-input-focus');
+  });
 
+
+</script>
 
   </body>
 
