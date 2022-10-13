@@ -1,7 +1,17 @@
+@font-face {
+  font-family: poppins;
+  src: url(./fonts/Poppins-Regular.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: poppins;
+}
+
+.nav-1-size{
+  width: 30% !important;
 }
 
 .nav > li > .nav-1-a {
@@ -12,7 +22,7 @@
   padding: 1.5em;
 }
 
-.nav-link:hover {
+.nav-1-a:hover {
 border-top: 4px solid #d85144;
 }
 
@@ -20,27 +30,43 @@ border-top: 4px solid #d85144;
   color: #d85144;
 }
 
-.nav > li > .nav-1-a {
+.nav-1-logo {
+  width: 2em;
+}
+
+.nav > li > .section-2-nav {
   color: #9094a4;
-  font-weight: bold;
   font-size: 0.8em;
   letter-spacing: 1px;
-  padding: 1.5em;
 }
 
-.nav > li > .nav-link-2 {
-  font-size: 0.7em;
-  letter-spacing: 1px;
-  padding: 1.5em;
-  color: #9094a4;
-  font-weight: bold;
+.search-bar {
+  border-radius: 2px;
+  border: 1px solid rgb(144, 148, 164, 0.2);
+  display: flex;
 }
 
-nav > li > img {
-flex-basis: 0.5;
-height: auto;
+.search-bar-input {
+  border: none;
+  background-color:rgb(144, 148, 164, 0.2);
 }
 
-.mycart {
-  flex-basis: 1;
+.img-search{
+  background-color:rgb(144, 148, 164, 0.2);
+
+  height: 50%;
+  align-self: center;
 }
+
+input[type=text] {
+  width: 250px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100%  */
+input[type=text]:focus {
+  width: 310px;
+}
+
+
