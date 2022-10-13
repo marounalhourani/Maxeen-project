@@ -16,14 +16,10 @@
 
   <body>
 
-    <div class="py-5">
-      <h3 data-number="20" class="testing">test</h3>
-    </div>
-
     <section id="section-1" class="position-relative">
-      <div class="px-5 px-5 px-5 nav-bar-1 d-flex justify-content-between container">
+      <div class="nav-bar-1 d-flex justify-content-between container-md">
 
-        <ul class="nav d-flex justify-content-between">
+        <ul class="nav d-flex flex-md-row  flex-column  justify-content-start ul-1 flex-nowrap">
           <li class="nav-item">
             <a class="nav-link nav-1-a" href="#">Home</a></li>
           <li class="nav-item">
@@ -34,11 +30,13 @@
             <a class="nav-link nav-1-a" id="login-1" href="#">Login</a></li>
         </ul>
 
-        <div class="img-nav-1 text-center top-0 start-50 translate-middle mt-5">
-          <img src="./images/Group 56.png" style="width: 67%;" class="img-fluid">
+        <!-- top-0 start-50 translate-middle mt-5 -->
+
+        <div class="img-nav-1 text-center mt-md-3 mt-sm-0">
+          <img src="./images/Group 56.png" id="logo">
         </div>
 
-        <ul class="nav d-flex justify-content-between">
+        <ul class="nav d-flex justify-content-end ul-2 flex-nowrap flex-md-row  flex-column">
           <li class="nav-item">
             <a class="nav-link nav-1-a position-relative" href="#">
               <img src="./images/heart.png" class="img-fluid nav-1-logo" alt="heart">
@@ -65,7 +63,7 @@
 <!-- ------------------------------ -->
 
 
-<section class="section-2 mt-5">
+<section class="section-2">
 
 
   <ul class="nav container align-items-center d-flex">
@@ -104,9 +102,14 @@
         <img src="./images/selection.png"> Hire a Coach
       </a></li>
 
-    <div class="search search-bar">
-      <input type="text" name="search" placeholder="Search Here" class="search-bar-input">
-      <img src="./images/search.png" class="img-search align-items-stretch" >
+      <div class="d-flex search-input">
+        <div class="w-100">
+          <input type="text" name="search" placeholder="Search Here" class="search-bar-input">
+        </div>
+        <div>
+            <img src="./images/search.png" class="search_photo" >
+        </div>
+      </div>
     </div>
 
   </ul>
@@ -198,4 +201,8 @@
     <li class="nav-item">
       <a class="nav-link" href="#">Login</a></li>
   </ul>   -->
+
+  <!-- <div class="py-5">
+    <h3 data-number="50" class="testing">test</h3>
+  </div> -->
 </nav>
