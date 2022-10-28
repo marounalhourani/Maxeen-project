@@ -38,8 +38,8 @@
 
         <ul class="nav d-flex justify-content-end ul-2 flex-nowrap flex-md-row  flex-column">
           <li class="nav-item">
-            <a class="text-end nav-link nav-1-a position-relative" href="#">
-              <img src="./images/heart.png" class="text-end img-fluid nav-1-logo" alt="heart">
+            <a class="nav-link nav-1-a position-relative" href="#">
+              <img src="./images/heart.png" class="img-fluid nav-1-logo" alt="heart">
               <div class="d-flex align-items-center text-center justify-content-center circle-1 position-absolute">
                 77
               </div>
@@ -47,15 +47,15 @@
 
           </li>
           <li class="nav-item">
-            <a class="text-end nav-link nav-1-a position-relative" href="#">
-              <img src="./images/shopping-cart.png" class="img-fluid nav-1-logo text-end" alt="shopping">
+            <a class="nav-link nav-1-a position-relative" href="#">
+              <img src="./images/shopping-cart.png" class="img-fluid nav-1-logo" alt="shopping">
               <div class="d-flex align-items-center text-center justify-content-center circle-2 position-absolute">
                 98
               </div>
             
             </a></li>
           <li class="nav-item">
-            <a class="nav-link nav-1-a text-end" id="my-cart" href="#">My Cart</a></li>
+            <a class="nav-link nav-1-a" id="my-cart" href="#">My Cart</a></li>
         </ul>
         </div>
     </section>
@@ -175,107 +175,8 @@
   
 
       
-      <div class="row container">
-        <div class="col-3">
-          <img src="./images/banner.png" class="w-100">
-          <div class="d-flex justify-content-between">
-            <div>AUST</div>
-            <div>8h 17min</div>
-          </div>
-          <div class="text-weight-bold">
-            Graphic Design, AI
-          </div>
-          <div>
-            How To Become Great Graphic Designer in 7 Days
-          </div>
-        </div>
-      </div>
-
-      <div class="row container">
-        <div class="col-3">
-          <img src="./images/banner.png" class="w-100">
-          <div class="d-flex justify-content-between">
-            <div>AUST</div>
-            <div>8h 17min</div>
-          </div>
-          <div class="text-weight-bold">
-            Graphic Design, AI
-          </div>
-          <div>
-            How To Become Great Graphic Designer in 7 Days
-          </div>
-        </div>
-      </div>
-
-      <div class="row container">
-        <div class="col-3">
-          <img src="./images/banner.png" class="w-100">
-          <div class="d-flex justify-content-between">
-            <div>AUST</div>
-            <div>8h 17min</div>
-          </div>
-          <div class="text-weight-bold">
-            Graphic Design, AI
-          </div>
-          <div>
-            How To Become Great Graphic Designer in 7 Days
-          </div>
-        </div>
-      </div>
-
-      <div class="row container">
-        <div class="col-3">
-          <img src="./images/banner.png" class="w-100">
-          <div class="d-flex justify-content-between">
-            <div>AUST</div>
-            <div>8h 17min</div>
-          </div>
-          <div class="text-weight-bold">
-            Graphic Design, AI
-          </div>
-          <div>
-            How To Become Great Graphic Designer in 7 Days
-          </div>
-        </div>
-      </div>
-    </section>
-
-<div>
-  <div>
-    <img src="./images/banner">
-  </div>
-
-
-
-</div>
-
-
-
-
-    <section class="grid-section">
-
-
-
-
 
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <script>
   document.querySelector('.search-input input').addEventListener('focus', function(event) {
